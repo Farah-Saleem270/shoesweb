@@ -30,13 +30,14 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+    cursor: pointer;
 }
 
 .linklist a {
     color: white;
 }
 
-.navItem:hover{
+.navItem:hover {
     background-color: gray;
     padding: .45rem 1rem;
     display: flex;
@@ -44,7 +45,7 @@
     align-items: center;
     border-radius: 1rem;
     transition: all 0.5s ease-out;
-    
+
 }
 
 .search {
@@ -55,7 +56,7 @@
 
 
 
-.searchinput{
+.searchinput {
     border: none;
     padding: 0 1rem;
     border-radius: 1rem;
@@ -78,13 +79,79 @@
 
 .navItem i {
     color: white;
-    font-size:1.2rem ;
+    font-size: 1.2rem;
     transition: all 0.5s ease-out;
 }
 
 /* HERO SCTION STYLING */
 
-.slider{
+.slider {
     background-image: url(images/back-img.jpg);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+
+.sliderwrapper {
+    display: flex;
+    width: 500vw;
+
+}
+
+.sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.sliderItem img {
+    background-size: cover;
+    z-index: 1;
+
+}
+
+.sliderbg{
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    background-color: chartreuse;
+}
+
+.sliderTittle {
+    position: absolute;
+    color: white;
+    top: 5vw;
+    right: 10vw;
+    font-size: 4.50rem;
+    line-height: 5rem;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1;
+}
+
+.sliderPrice {
+     position: absolute;
+    color: white;
+    top: 5vw;
+    left: 10vw;
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 900;
+    text-align: center;
+    border: 1px solid gray;
+
+}
+
+.buyButton {
+     position: absolute;
+    color: white;
+    top: 25vw;
+    right: 18vw;
+    border: 2px solid gray;
+    font-weight: 700;
+    padding: .8rem 1.70rem;
+    background-color: black;
+   cursor: pointer;
 }
