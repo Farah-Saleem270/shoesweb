@@ -84,3 +84,7 @@
 
 /* HERO SCTION STYLING */
 
+.slider{
+    background-image: url(images/back-img.jpg);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
