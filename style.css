@@ -87,7 +87,7 @@
 
 .slider {
     background-image: url(images/back-img.jpg);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
 }
 
 .sliderwrapper {
@@ -104,6 +104,16 @@
     margin-top: 3rem;
     position: relative;
 }
+
+
+/* .imgItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 768px;
+    height: 768px;
+    z-index: 1;
+} */
 
 .sliderItem img {
     background-size: cover;
@@ -148,10 +158,45 @@
      position: absolute;
     color: white;
     top: 25vw;
-    right: 18vw;
+    right: 15vw;
     border: 2px solid gray;
     font-weight: 700;
-    padding: .8rem 1.70rem;
+    font-size: 1rem;
+    padding: .8rem 3rem;
     background-color: black;
    cursor: pointer;
 }
+
+.buyButton:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.2s ease-in;
+}
+
+.sliderItem:nth-child(1) .sliderbg{
+    background-color: chartreuse;
+}
+
+.sliderItem:nth-child(2) .sliderbg{
+   background-color: darkviolet;
+    
+}
+
+.sliderItem:nth-child(3) .sliderbg{
+   background-color: rgb(255, 0, 170);
+    
+}
+
+.sliderItem:nth-child(4) .sliderbg{
+   background-color: darkgreen;
+    
+}
+
+
+.sliderItem:nth-child(5) .sliderbg{
+  background-color: brown;
+    
+}
+
+
+    
