@@ -133,8 +133,7 @@
 }
 
 .sliderPrice {
-     position: absolute;
-    color: white;
+    position: absolute;
     top: 5vw;
     left: 10vw;
     font-size: 4rem;
@@ -146,7 +145,7 @@
 }
 
 .buyButton {
-     position: absolute;
+    position: absolute;
     color: white;
     top: 25vw;
     right: 15vw;
@@ -166,15 +165,16 @@
 
 .sliderItem:nth-child(1) .sliderbg{
     background-color: chartreuse;
+    
 }
 
 .sliderItem:nth-child(2) .sliderbg{
-   background-color: rgb(60, 0, 211);
+   background-color: rgb(77, 7, 255);
     
 }
 
 .sliderItem:nth-child(3) .sliderbg{
-   background-color: rgb(107, 8, 74);
+   background-color: rgb(234, 18, 162);
     
 }
 
@@ -185,9 +185,29 @@
 
 
 .sliderItem:nth-child(5) .sliderbg{
-  background-color: rgb(51, 132, 135);
+  background-color: rgb(12, 247, 255);
     
 }
 
+.sliderItem:nth-child(1) .sliderPrice{
+    color: chartreuse;
+}
+
+
+.sliderItem:nth-child(2) .sliderPrice{
+    color: rgb(77, 7, 255);
+}
+
+.sliderItem:nth-child(3) .sliderPrice{
+    color: rgb(234, 18, 162);
+}
+
+.sliderItem:nth-child(4) .sliderPrice{
+    color: rgba(218, 244, 18);
+}
+
+.sliderItem:nth-child(5) .sliderPrice{
+    color: rgb(12, 247, 255);
+}
 
     
