@@ -87,7 +87,7 @@
 
 .slider {
     background-image: url(images/back-img.jpg);
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 
 .sliderwrapper {
@@ -105,15 +105,6 @@
     position: relative;
 }
 
-
-/* .imgItem{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 768px;
-    height: 768px;
-    z-index: 1;
-} */
 
 .sliderItem img {
     background-size: cover;
@@ -178,23 +169,23 @@
 }
 
 .sliderItem:nth-child(2) .sliderbg{
-   background-color: darkviolet;
+   background-color: rgb(60, 0, 211);
     
 }
 
 .sliderItem:nth-child(3) .sliderbg{
-   background-color: rgb(255, 0, 170);
+   background-color: rgb(107, 8, 74);
     
 }
 
 .sliderItem:nth-child(4) .sliderbg{
-   background-color: darkgreen;
+   background-color: rgb(218, 244, 18);
     
 }
 
 
 .sliderItem:nth-child(5) .sliderbg{
-  background-color: brown;
+  background-color: rgb(51, 132, 135);
     
 }
 
