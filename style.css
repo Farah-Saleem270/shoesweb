@@ -88,11 +88,13 @@
 .slider {
     background-image: url(images/back-img.jpg);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
 }
 
 .sliderwrapper {
     display: flex;
     width: 500vw;
+    transition: all 1s ease-in;
 
 }
 
@@ -112,7 +114,7 @@
 
 }
 
-.sliderbg{
+.sliderbg {
     position: absolute;
     width: 550px;
     height: 550px;
@@ -154,60 +156,58 @@
     font-size: 1rem;
     padding: .8rem 3rem;
     background-color: black;
-   cursor: pointer;
+    cursor: pointer;
 }
 
-.buyButton:hover{
+.buyButton:hover {
     background-color: white;
     color: black;
     transition: all 0.2s ease-in;
 }
 
-.sliderItem:nth-child(1) .sliderbg{
+.sliderItem:nth-child(1) .sliderbg {
     background-color: chartreuse;
-    
+
 }
 
-.sliderItem:nth-child(2) .sliderbg{
-   background-color: rgb(77, 7, 255);
-    
+.sliderItem:nth-child(2) .sliderbg {
+    background-color: rgb(77, 7, 255);
+
 }
 
-.sliderItem:nth-child(3) .sliderbg{
-   background-color: rgb(234, 18, 162);
-    
+.sliderItem:nth-child(3) .sliderbg {
+    background-color: rgb(234, 18, 162);
+
 }
 
-.sliderItem:nth-child(4) .sliderbg{
-   background-color: rgb(218, 244, 18);
-    
+.sliderItem:nth-child(4) .sliderbg {
+    background-color: rgb(218, 244, 18);
+
 }
 
 
-.sliderItem:nth-child(5) .sliderbg{
-  background-color: rgb(12, 247, 255);
-    
+.sliderItem:nth-child(5) .sliderbg {
+    background-color: rgb(12, 247, 255);
+
 }
 
-.sliderItem:nth-child(1) .sliderPrice{
+.sliderItem:nth-child(1) .sliderPrice {
     color: chartreuse;
 }
 
 
-.sliderItem:nth-child(2) .sliderPrice{
+.sliderItem:nth-child(2) .sliderPrice {
     color: rgb(77, 7, 255);
 }
 
-.sliderItem:nth-child(3) .sliderPrice{
+.sliderItem:nth-child(3) .sliderPrice {
     color: rgb(234, 18, 162);
 }
 
-.sliderItem:nth-child(4) .sliderPrice{
+.sliderItem:nth-child(4) .sliderPrice {
     color: rgba(218, 244, 18);
 }
 
-.sliderItem:nth-child(5) .sliderPrice{
+.sliderItem:nth-child(5) .sliderPrice {
     color: rgb(12, 247, 255);
 }
-
-    
