@@ -211,3 +211,23 @@
 .sliderItem:nth-child(5) .sliderPrice {
     color: rgb(5, 147, 140);
 }
+
+/* styling for section 02 */
+
+.feature-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    padding-left: 7rem;
+}
+
+.featureImg{
+    width: 100px;
+    height: 100px;
+}
+
+.featureImg img{
+    background-size: cover;
+}
+
