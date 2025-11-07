@@ -214,7 +214,7 @@
 
 /* styling for section 02 */
 
-.features{
+.features {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -223,12 +223,12 @@
 }
 
 
-.featureImg{
+.featureImg {
     width: 100px;
     height: 100px;
 }
 
-.feature{
+.feature {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,51 +236,76 @@
 }
 
 
-.featureImg img{
+.featureImg img {
     background-size: cover;
-   
+
 }
 
-.featureTittle{
+.featureTittle {
     font-size: 25px;
     font-weight: 600;
     margin: 20px;
 }
 
-.featureDes{
+.featureDes {
     color: gray;
     width: 50%;
     height: 100px;
 }
 
-.product{
+.product {
     height: 100vh;
     background-color: whitesmoke;
     position: relative;
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
 
-.productImg{
+.productImg {
     width: 40%;
     top: 11%;
     position: absolute;
 }
 
-.productDetails{
+.productDetails {
     position: absolute;
-    top: 10%;
+    top: 20%;
     right: 0;
     width: 50%;
     padding: 50px;
 }
 
-.productTittle{
+.productTittle {
     font-size: 75px;
     font-weight: 900;
     padding-bottom: 15px;
 }
 
-.productDesc{
+.productDesc {
     font-size: 19px;
     color: gray;
+    padding: 15px 0;
+}
+
+
+.colors,
+.sizes{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.color {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color:last-child{
+    background-color: darkblue;
+}
+
+.size{
+    font-size: 2px;
 }
