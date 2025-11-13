@@ -10,3 +10,4 @@ item.addEventListener("click", () => {
     wrapperSlider.style.transform = `translateX(${-100 * idx}vw)`;
 })
 })
+

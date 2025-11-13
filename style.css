@@ -288,7 +288,7 @@
 
 
 .colors,
-.sizes{
+.sizes {
     display: flex;
     margin-bottom: 20px;
 }
@@ -302,15 +302,28 @@
     cursor: pointer;
 }
 
-.color:last-child{
+.color:last-child {
     background-color: darkblue;
 }
 
-.size{
-   padding: 5px 20px; 
-   border:  1px solid black;
-   margin-right: 10px;
-   cursor: pointer;
-   font-size: 20px;
+.size {
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
 }
 
+.producrBtn {
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.producrBtn:hover {
+    background-color: white;
+    color: black;
+}
