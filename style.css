@@ -307,5 +307,10 @@
 }
 
 .size{
-    font-size: 2px;
+   padding: 5px 20px; 
+   border:  1px solid black;
+   margin-right: 10px;
+   cursor: pointer;
+   font-size: 20px;
 }
+
