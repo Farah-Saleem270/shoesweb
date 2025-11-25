@@ -10,10 +10,30 @@ const products = [
         colors: [
             {
                 code: "black",
-                img: "./img"
-            }
-        ]
-    }
+                img: "./iamges/shoes-1.png",
+            },
+            {
+                color: "darkblue",
+                img: "./images/shoes-1(1).png",
+            },
+        ],
+    },
+    
+        {
+        id : 1,
+        title: "Air jordan",
+        price: 119,
+        colors: [
+            {
+                code: "black",
+                img: "./iamges/shoes-1.png",
+            },
+            {
+                color: "darkblue",
+                img: "./images/shoes-6.png",
+            },
+        ],
+    },
 ]
 
 manuItem.forEach((item, idx) => {
