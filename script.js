@@ -29,8 +29,56 @@ const products = [
                 img: "./images/shoes-2.png",
             },
             {
-                color: "darkblue",
+                color: "#561f47",
                 img: "./images/shoes-1(1).png",
+            },
+        ],
+    },
+
+     {
+        id : 3,
+        title: "BLAZER",
+        price: 109,
+        colors: [
+            {
+                code: "#dcf612",
+                img: "./images/shoes-3.png",
+            },
+            {
+                color: "#003103",
+                img: "./images/shoes-3(1).png",
+            },
+        ],
+    },
+
+     {
+        id : 4,
+        title: "CREATER",
+        price: 129,
+        colors: [
+            {
+                code: "#4D1A1D",
+                img: "./images/shoes-4.png",
+            },
+            {
+                color: "#675f84",
+                img: "./images/shoes-4(1).png",
+            },
+        ],
+    },
+
+     {
+        id : 5,
+        title: "HIPPIE",
+        price: 99,
+        colors: [
+            {
+                code: "#EDC101",
+                img: "./images/shoes-5.png",
+            },
+            {
+                color: "black",
+                img: "./images/shoes-5(1).png",
             },
         ],
     },
