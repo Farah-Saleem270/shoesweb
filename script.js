@@ -1,5 +1,5 @@
-let wrapperSlider = document.querySelector(".sliderwrappergir");
-// let sliderItem = document.querySelectorAll(".sliderItem");
+let wrapperSlider = document.querySelector(".sliderwrapper");
+let sliderItem = document.querySelectorAll(".sliderItem");
 let manuItem = document.querySelectorAll(".manuItem");
 
 const products = [
