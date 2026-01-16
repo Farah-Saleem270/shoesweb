@@ -1,6 +1,7 @@
 let wrapperSlider = document.querySelector(".sliderwrapper");
 let sliderItem = document.querySelectorAll(".sliderItem");
 let manuItem = document.querySelectorAll(".manuItem");
+let sliderPrice = document.querySelectorAll(".sliderPrice");
 
 const products = [
     {
@@ -106,6 +107,11 @@ item.addEventListener("click", () => {
      CurrentProductPrice.textContent = "$" + choosenProduct.price;
      CurrentProductImg.src = choosenProduct.colors[0].img;
 
-})
-})
+     //hero slider Price update
+     sliderPrice[idx].textContent = "$" + choosenProduct.price;
+
+
+     CurrentProductColor
+});
+});
 
