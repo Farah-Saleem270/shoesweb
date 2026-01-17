@@ -5,7 +5,7 @@ let sliderPrice = document.querySelectorAll(".sliderPrice");
 
 const products = [
     {
-        id : 1,
+        id: 1,
         title: "Air Force",
         price: 119,
         colors: [
@@ -14,14 +14,14 @@ const products = [
                 img: "./images/shoes-1.png",
             },
             {
-                color: "darkblue",
-                img: "./images/shoes-1(1).png",
+                code: "darkblue",
+                img: "./images/shoes-1-alt.png",
             },
         ],
     },
 
-     {
-        id : 2,
+    {
+        id: 2,
         title: "Air Jorden",
         price: 149,
         colors: [
@@ -30,14 +30,14 @@ const products = [
                 img: "./images/shoes-2.png",
             },
             {
-                color: "#561f47",
-                img: "./images/shoes-1(1).png",
+                code: "#561f47",
+                img: "./images/shoes-2-alt.png",
             },
         ],
     },
 
-     {
-        id : 3,
+    {
+        id: 3,
         title: "BLAZER",
         price: 109,
         colors: [
@@ -46,14 +46,14 @@ const products = [
                 img: "./images/shoes-3.png",
             },
             {
-                color: "#003103",
-                img: "./images/shoes-3(1).png",
+                code: "#003103",
+                img: "./images/shoes-3-alt.png",
             },
         ],
     },
 
-     {
-        id : 4,
+    {
+        id: 4,
         title: "CREATER",
         price: 129,
         colors: [
@@ -62,14 +62,14 @@ const products = [
                 img: "./images/shoes-4.png",
             },
             {
-                color: "#675f84",
-                img: "./images/shoes-4(1).png",
+                code: "#675f84",
+                img: "./images/shoes-4-alt.png",
             },
         ],
     },
 
-     {
-        id : 5,
+    {
+        id: 5,
         title: "HIPPIE",
         price: 99,
         colors: [
@@ -78,40 +78,47 @@ const products = [
                 img: "./images/shoes-5.png",
             },
             {
-                color: "black",
-                img: "./images/shoes-5(1).png",
+                code: "#402a1b",
+                img: "./images/shoes-5-alt.png",
             },
         ],
     },
-]
+];
 
 let choosenProduct = products[0];
- 
+
 const CurrentProductImg = document.querySelector(".productImg");
 const CurrentProductTittle = document.querySelector(".productTittle");
 const CurrentProductPrice = document.querySelector(".productPrice");
-const CurrentProductColor = document.querySelectorAll(".color");
+const CurrentProductColors = document.querySelectorAll(".color");
 const CurrentProductSize = document.querySelectorAll(".size");
 
 
-manuItem.forEach((item, idx) => {
-item.addEventListener("click", () => {
-   //chnage ka current slide
-    wrapperSlider.style.transform = `translateX(${-100 * idx}vw)`;
+manuItem.forEach((item, index) => {
+    item.addEventListener("click", () => {
+        //chnage ka current slide
+        wrapperSlider.style.transform = `translateX(${-100 * index}vw)`;
 
-    //chnage the choosen product
-    choosenProduct = products[idx];
+        //chnage the choosen product
+        choosenProduct = products[index];
 
-    //chnage Text of currentProdect
-     CurrentProductTittle.textContent = choosenProduct.title;
-     CurrentProductPrice.textContent = "$" + choosenProduct.price;
-     CurrentProductImg.src = choosenProduct.colors[0].img;
+        //chnage Text of currentProdect
+        CurrentProductTittle.textContent = choosenProduct.title;
+        CurrentProductPrice.textContent = "$" + choosenProduct.price;
+        CurrentProductImg.src = choosenProduct.colors[0].img;
 
-     //hero slider Price update
-     sliderPrice[idx].textContent = "$" + choosenProduct.price;
-
-
-     CurrentProductColor
+        //hero slider Price update
+        sliderPrice[index].textContent = "$" + choosenProduct.price;
+    
+        //Assing new Colors
+        CurrentProductColors.forEach((color, index) => {
+            color.style.backgroundColor = choosenProduct.colors[index].code;
+        });
+    });
 });
-});
 
+CurrentProductColors.forEach((color, index) => {
+    color.addEventListener("click", () => {
+        CurrentProductImg.src = choosenProduct.colors[index].img
+    })
+})

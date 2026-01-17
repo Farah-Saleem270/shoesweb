@@ -213,7 +213,7 @@
     color: rgb(5, 147, 140);
 }
 
-/* styling for section 02 */
+/* styling for section 01 */
 
 .features {
     display: flex;
@@ -253,6 +253,8 @@
     width: 50%;
     height: 100px;
 }
+
+/* styling for section 02 */
 
 .product {
     height: 100vh;
