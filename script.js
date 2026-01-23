@@ -120,5 +120,17 @@ manuItem.forEach((item, index) => {
 CurrentProductColors.forEach((color, index) => {
     color.addEventListener("click", () => {
         CurrentProductImg.src = choosenProduct.colors[index].img
-    })
-})
+    });
+});
+
+
+CurrentProductSize.forEach((size, index) => {
+    size.addEventListener("click" ,()=> {
+        CurrentProductSize.forEach((size=>{
+              size.style.backgroundColor ="white";
+        size.style.color= "black";
+        }))
+        size.style.backgroundColor ="black";
+        size.style.color= "white";
+    });
+});
